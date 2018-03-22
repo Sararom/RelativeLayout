@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.romero.relativelayout.MainActivity">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Sara"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nombre"
+        android:layout_marginLeft="16dp"
+        android:text="Romero"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/ing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_toStartOf="@+id/nombre"
+        android:layout_below="@+id/nombre"
+        android:text="Casi ing."
+        />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ing"
+        android:layout_toStartOf="@+id/ing"
+        android:text="Guardar"
+
+        />
+
+    <Button
+        android:onClick="cancelar"
+        android:id="@+id/cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ing"
+        android:layout_toEndOf="@+id/guardar"
+        android:layout_toRightOf="@+id/guardar"
+        android:text="Cancelar"
+
+        />
+
+</RelativeLayout>
